@@ -1,5 +1,6 @@
 <html>
     <head>
+      <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -7,10 +8,23 @@
         <link rel="stylesheet" href="./css/style.css">
         <link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
         <link href="https://fonts.googleapis.com/css?family=Tangerine" xrel="stylesheet">
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
        
+      
     </head>
 
     <body class="bodymain"  style="overflow-x: hidden;" >
+      
+      <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#asdf">Courses</a>
+        <a href="#forms">Form</a>
+        <a href="#testinomials">Testinomials</a>  
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
     
         <div class="home">
               <!--------  <br>
@@ -20,14 +34,10 @@
                     <div class="backimg"></div>  
                     <div class="details">
                       <div class="scroll">
-                        <i><a href="#asdf">JOIN THE MENTORSHIP</a></i>
+                        <i><a href="#asdf" >JOIN THE MENTORSHIP</a></i>
                         </div>
                       <i> <p class="smalltext">be the expert from zero to hero</p></i>
                     </div>   
-
-
-
-
         </div>
        
         <div id="asdf" class="cardclass">
@@ -186,9 +196,21 @@
 
            <a href="http://techtable.com/"><img src="images/mail.jpg" class="foot"></a>
         </div>
-
-
+       
+  
     </body>
+    <script >
+      function myFunction() {
+    var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+    //document.getElementById("myscroll")=" ";
+  } else {
+    x.className = "topnav";
+  }
+}
+        </script>
+
 </html>
 
 
